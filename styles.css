@@ -1,0 +1,235 @@
+
+html, body, img {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', 'Sans Serif';
+}
+
+#black_popup{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    width:100%;
+    height:100%;
+    z-index:1;
+    display:none;
+}
+
+
+.black_modal{
+    margin:auto;
+    width:600px;
+    height:600px;
+    display:flex;
+    flex-direction:row;
+    background:#262629;
+    box-sizing: border-box;
+    position:relative;
+    z-index:2;
+    color:white;
+}
+.pink_modal{
+    margin:auto;
+    width:600px;
+    height:600px;
+    display:flex;
+    flex-direction:row;
+    background:#78259f;
+    box-sizing: border-box;
+    position:relative;
+    z-index:2;
+    color:white;
+}
+
+.black_modal_text{
+    /* width:370px; */
+    width:450px;
+    margin: auto;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    /* justify-content:center; */
+    height:504px;
+}
+
+.black_logo{
+    height:35px;
+    width:210px;
+    margin-bottom:23px;
+}
+
+.black_friday{
+    font-size:50px;
+}
+
+.pink_friday{
+    font-size:44px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.black_sale{
+    font-size:130px;
+    background:white;
+    color:#262629;
+    font-weight:bold;
+    line-height:115px;
+    width:325px;
+    font-family:'Noto Sans', 'Sans Serif';
+    padding-bottom:5px;
+    margin-top:-2px;
+    margin-bottom:26px;
+}
+.pink_sale{
+    color:#78259f;
+    font-size:130px;
+    background:white;
+    font-weight:bold;
+    line-height:115px;
+    width:325px;
+    font-family:'Noto Sans', 'Sans Serif';
+    padding-bottom:5px;
+    margin-top:-2px;
+    margin-bottom:26px;
+}
+
+.black_unlimited{
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:14px;
+    letter-spacing: -0.36px;
+    line-height:28px;
+    width:440px;
+}
+
+.black_price{
+    font-size:36px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+.black_claim_offer{
+    color:#262629;
+    background:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:0.9px;
+    padding: 13px 36px;
+    border-radius:2px;
+    margin-bottom:13px;
+}
+
+.black_cancel{
+    color:white;
+    font-size:14px;
+    text-decoration:none;
+}
+
+
+#black_overlay{
+    position: fixed;
+    display: none; /* Hidden by default */ 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.black_price > br {
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .black_modal{
+        width:300px;
+        height:500px;
+    }
+
+    .pink_modal{
+        width:300px;
+        height:500px;
+    }
+
+    .black_modal_text{
+        width:264px;
+        height:430px;
+    }
+
+    .black_logo{
+        height:20px;
+        width:120px;
+        margin-bottom:20px;
+    }
+
+    .black_friday{
+        font-size:33px;
+    }
+    
+    .pink_friday{
+        font-size:29px;
+        margin-top:5px;
+        margin-bottom:2px;
+    }
+
+    .black_unlimited{
+        font-size:16px;
+        font-weight:normal;
+        line-height:24px;
+        width:264px;
+        margin-bottom:12px;
+    }
+
+    .black_price{
+        font-size:28px;
+        line-height:34px;
+        margin-bottom:17px;
+    }
+    .black_price > br {
+        display:block;
+    }
+
+    .black_sale{
+        line-height:72px;
+        margin-bottom:22px;
+        font-size:86px;
+        width:217px;
+    }
+    .pink_sale{
+        line-height:72px;
+        margin-bottom:22px;
+        font-size:86px;
+        width:217px;
+    }
+
+    .black_claim_offer{
+        font-size:14px;
+        padding-left:40px;
+        padding-right:40px;
+        letter-spacing:0.7px;
+        padding-top:11px;
+        padding-bottom:10px;
+        margin-bottom:11px;
+    }
+
+    .black_cancel{
+        letter-spacing: -0.28px;
+        font-weight:600;
+    }
+}
